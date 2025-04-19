@@ -12,6 +12,7 @@
 - Apache spark
 - Pyspark
 - Jupiter notebook
+- Docker
 
 ## Passos para rodar o projeto
 
