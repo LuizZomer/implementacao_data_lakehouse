@@ -39,3 +39,26 @@ Por meio da URL você irá acessar o jupiter notebook de forma interna no contai
 ```
 http://localhost:8888/tree?
 ```
+
+### Passo 3 - Rodar o codigo
+
+Já dentro do jupiter notebook você criará um novo notebook no botão da parte de cima da tela, apartir dele poderá copiar esta conexão do pyspark:
+```py
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+    .appName("Iceberg") \
+    .master("spark://spark-iceberg:7077") \
+    .config("spark.sql.catalog.iceberg", "org.apache.iceberg.spark.SparkCatalog") \
+    .config("spark.sql.catalog.iceberg.type", "hadoop") \
+    .config("spark.sql.catalog.iceberg.warehouse", "s3a://warehouse/") \
+    .config("spark.sql.extensions", "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions") \
+    .config("spark.hadoop.fs.s3a.access.key", "admin") \
+    .config("spark.hadoop.fs.s3a.secret.key", "password") \
+    .config("spark.hadoop.fs.s3a.endpoint", "http://localhost:9001") \
+    .config("spark.hadoop.fs.s3a.path.style.access", "true") \
+    .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem") \
+    .getOrCreate()
+
+print("PySpark started")
+```
