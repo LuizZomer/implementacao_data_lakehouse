@@ -5,5 +5,5 @@
 - **Apache iceberg**
 - **Apache spark**
 - **Pyspark**
-- **Jupiter notebook**
+- **Jupyter notebook**
 - **Docker**

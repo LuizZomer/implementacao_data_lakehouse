@@ -11,9 +11,15 @@ theme:
     - navigation.tabs
     - content.code.copy
     - navigation.top
+
 nav:
   - Início: index.md
-  - Execução: execucao.md
+  - Guia:
+      - Instalação: instalacao.md
+      - Execução: execucao.md
+  - Tecnologias: tecnologias.md
+  - Referencias: referencias.md
+
 markdown_extensions:
   - admonition
   - toc:
