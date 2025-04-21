@@ -1,0 +1,23 @@
+site_name: Implementação Data Lakehouse
+site_description: Projeto hands-on com Spark, Iceberg, MinIO e Jupyter
+theme:
+  name: material
+  language: pt
+  palette:
+    scheme: slate
+    primary: blue
+    accent: cyan
+  features:
+    - navigation.tabs
+    - content.code.copy
+    - navigation.top
+nav:
+  - Início: index.md
+  - Execução: execucao.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
