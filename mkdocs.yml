@@ -13,12 +13,12 @@ theme:
     - navigation.top
 
 nav:
-  - Início: index.md
+  - Início: docs/index.md
   - Guia:
-      - Instalação: instalacao.md
-      - Execução: execucao.md
-  - Tecnologias: tecnologias.md
-  - Referencias: referencias.md
+      - Instalação: docs/instalacao.md     
+      - Execução: docs/execucao.md
+  - Tecnologias: docs/tecnologias.md
+  - Referências: docs/referencias.md
 
 markdown_extensions:
   - admonition
