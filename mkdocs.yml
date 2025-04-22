@@ -17,8 +17,9 @@ nav:
   - Guia:
       - Instalação: docs/instalacao.md     
       - Execução: docs/execucao.md
-  - Tecnologias: docs/tecnologias.md
-  - Referências: docs/referencias.md
+      - Tecnologias: docs/tecnologias.md
+      - Referências: docs/referencias.md
+      - Apache Iceberg: docs/apacheIceberg.md
 
 markdown_extensions:
   - admonition
