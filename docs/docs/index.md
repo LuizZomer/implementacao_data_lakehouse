@@ -24,3 +24,6 @@ Criar uma estrutura funcional para experimentar o modelo Lakehouse com:
     É possível modificar os notebooks, os scripts de ingestão e os dados sem quebrar a estrutura.
 
 ---
+<div style="position: absolute; top: 10px; right: 20px; background-color: #f8f9fa; padding: 6px 12px; border-radius: 6px; font-size: 0.9em; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+  Autores: Luiz Henrique, Maria Silva
+</div>

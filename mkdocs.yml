@@ -1,12 +1,21 @@
 site_name: Implementação Data Lakehouse
 site_description: Projeto hands-on com Spark, Iceberg, MinIO e Jupyter
 theme:
+theme:
   name: material
-  language: pt
   palette:
-    scheme: slate
-    primary: blue
-    accent: cyan
+    - scheme: default
+      primary: light blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
   features:
     - navigation.tabs
     - content.code.copy
@@ -18,8 +27,9 @@ nav:
       - Instalação: docs/instalacao.md     
       - Execução: docs/execucao.md
       - Tecnologias: docs/tecnologias.md
-      - Referências: docs/referencias.md
-      - Apache Iceberg: docs/apacheIceberg.md
+  - Apache Iceberg: docs/apacheIceberg.md
+  - Apache Spark: docs/apacheSpark.md
+  - Referências: docs/referencias.md
 
 markdown_extensions:
   - admonition
@@ -28,3 +38,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.details
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/LuizZomer/implementacao_data_lakehouse
+      name: Repositório GitHub
