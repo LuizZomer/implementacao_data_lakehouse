@@ -11,21 +11,25 @@
       
       
       
+        <link rel="prev" href="../apacheIceberg/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../referencias/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Implementação Data Lakehouse</title>
+        <title>Apache Spark - Implementação Data Lakehouse</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introducao-ao-apache-spark-com-python" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Implementação Data Lakehouse" class="md-header__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
+    <a href="../.." title="Implementação Data Lakehouse" class="md-header__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -99,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Apache Spark
             
           </span>
         </div>
@@ -198,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link">
         
   
   
@@ -219,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/docs/instalacao/" class="md-tabs__link">
+        <a href="../instalacao/" class="md-tabs__link">
           
   
   
@@ -237,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/apacheIceberg/" class="md-tabs__link">
+      <a href="../apacheIceberg/" class="md-tabs__link">
         
   
   
@@ -254,9 +263,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="/docs/apacheSpark/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -275,7 +286,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/referencias/" class="md-tabs__link">
+      <a href="../referencias/" class="md-tabs__link">
         
   
   
@@ -310,7 +321,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Implementação Data Lakehouse" class="md-nav__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
+    <a href="../.." title="Implementação Data Lakehouse" class="md-nav__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -328,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -391,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/instalacao/" class="md-nav__link">
+      <a href="../instalacao/" class="md-nav__link">
         
   
   
@@ -414,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/execucao/" class="md-nav__link">
+      <a href="../execucao/" class="md-nav__link">
         
   
   
@@ -437,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tecnologias/" class="md-nav__link">
+      <a href="../tecnologias/" class="md-nav__link">
         
   
   
@@ -467,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/apacheIceberg/" class="md-nav__link">
+      <a href="../apacheIceberg/" class="md-nav__link">
         
   
   
@@ -486,10 +497,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/docs/apacheSpark/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Apache Spark
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -500,6 +533,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 O que é Spark?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐍 PySpark
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐍 PySpark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais componentes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-basico-com-pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Exemplo básico com PySpark
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -511,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/referencias/" class="md-nav__link">
+      <a href="../referencias/" class="md-nav__link">
         
   
   
@@ -543,6 +638,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-spark" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 O que é Spark?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐍 PySpark
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐍 PySpark">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais componentes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-basico-com-pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Exemplo básico com PySpark
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -554,8 +701,49 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="introducao-ao-apache-spark-com-python">Introdução ao Apache Spark com Python<a class="headerlink" href="#introducao-ao-apache-spark-com-python" title="Permanent link">&para;</a></h1>
+<p>Apache Spark é uma engine de processamento de dados distribuída e de código aberto, projetada para processar grandes volumes de dados de forma rápida e eficiente.</p>
+<h2 id="o-que-e-spark">🔥 O que é Spark?<a class="headerlink" href="#o-que-e-spark" title="Permanent link">&para;</a></h2>
+<p>Spark permite executar tarefas de análise de dados em cluster (vários computadores), sendo muito mais rápido que abordagens tradicionais como MapReduce, graças ao uso de memória (RAM) para o processamento.</p>
+<h2 id="pyspark">🐍 PySpark<a class="headerlink" href="#pyspark" title="Permanent link">&para;</a></h2>
+<p>PySpark é a interface do Apache Spark para a linguagem Python. Ela permite criar aplicações de big data utilizando a sintaxe familiar do Python.</p>
+<h3 id="principais-componentes">Principais componentes:<a class="headerlink" href="#principais-componentes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>RDD (Resilient Distributed Dataset):</strong> Estrutura de dados distribuída de baixo nível.</li>
+<li><strong>DataFrame:</strong> Tabela distribuída com colunas nomeadas, semelhante ao pandas.</li>
+<li><strong>Spark SQL:</strong> Permite executar consultas SQL sobre os dados.</li>
+<li><strong>MLlib:</strong> Biblioteca de machine learning distribuído.</li>
+<li><strong>GraphX:</strong> Para processamento de grafos (disponível apenas em Scala, mas pode ser usado indiretamente em Python).</li>
+</ul>
+<h2 id="exemplo-basico-com-pyspark">✅ Exemplo básico com PySpark<a class="headerlink" href="#exemplo-basico-com-pyspark" title="Permanent link">&para;</a></h2>
+<p>```python
+from pyspark.sql import SparkSession</p>
+<h1 id="criacao-de-uma-sparksession">Criação de uma SparkSession<a class="headerlink" href="#criacao-de-uma-sparksession" title="Permanent link">&para;</a></h1>
+<p>spark = SparkSession.builder \
+    .appName("Exemplo") \
+    .getOrCreate()</p>
+<h1 id="criando-um-dataframe">Criando um DataFrame<a class="headerlink" href="#criando-um-dataframe" title="Permanent link">&para;</a></h1>
+<p>dados = [("Ana", 30), ("Bruno", 25), ("Carlos", 40)]
+colunas = ["Nome", "Idade"]
+df = spark.createDataFrame(dados, colunas)</p>
+<p>df.show()</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -609,10 +797,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "content.code.copy", "navigation.top"], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

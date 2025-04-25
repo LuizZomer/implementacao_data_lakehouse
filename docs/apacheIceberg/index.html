@@ -11,21 +11,25 @@
       
       
       
+        <link rel="prev" href="../tecnologias/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../apacheSpark/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Implementação Data Lakehouse</title>
+        <title>Apache Iceberg - Implementação Data Lakehouse</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#apache-iceberg-com-pyspark" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Implementação Data Lakehouse" class="md-header__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
+    <a href="../.." title="Implementação Data Lakehouse" class="md-header__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -99,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Apache Iceberg
             
           </span>
         </div>
@@ -198,7 +207,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link">
         
   
   
@@ -219,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/docs/instalacao/" class="md-tabs__link">
+        <a href="../instalacao/" class="md-tabs__link">
           
   
   
@@ -235,9 +244,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="/docs/apacheIceberg/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -256,7 +267,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/apacheSpark/" class="md-tabs__link">
+      <a href="../apacheSpark/" class="md-tabs__link">
         
   
   
@@ -275,7 +286,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/referencias/" class="md-tabs__link">
+      <a href="../referencias/" class="md-tabs__link">
         
   
   
@@ -310,7 +321,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Implementação Data Lakehouse" class="md-nav__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
+    <a href="../.." title="Implementação Data Lakehouse" class="md-nav__button md-logo" aria-label="Implementação Data Lakehouse" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -328,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -391,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/instalacao/" class="md-nav__link">
+      <a href="../instalacao/" class="md-nav__link">
         
   
   
@@ -414,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/execucao/" class="md-nav__link">
+      <a href="../execucao/" class="md-nav__link">
         
   
   
@@ -437,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tecnologias/" class="md-nav__link">
+      <a href="../tecnologias/" class="md-nav__link">
         
   
   
@@ -464,10 +475,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/docs/apacheIceberg/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Apache Iceberg
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -478,6 +511,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-o-apache-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é o Apache Iceberg?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracao-com-pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com PySpark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicacao-das-configuracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicação das configurações
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-suportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos suportados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-do-apache-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens do Apache Iceberg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quando-usar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando Usar?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -489,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/apacheSpark/" class="md-nav__link">
+      <a href="../apacheSpark/" class="md-nav__link">
         
   
   
@@ -511,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/referencias/" class="md-nav__link">
+      <a href="../referencias/" class="md-nav__link">
         
   
   
@@ -543,6 +659,79 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-o-apache-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é o Apache Iceberg?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracao-com-pyspark" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com PySpark
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explicacao-das-configuracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicação das configurações
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-suportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos suportados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vantagens-do-apache-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vantagens do Apache Iceberg
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quando-usar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando Usar?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -554,8 +743,83 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="apache-iceberg-com-pyspark">Apache Iceberg com PySpark<a class="headerlink" href="#apache-iceberg-com-pyspark" title="Permanent link">&para;</a></h1>
+<h2 id="o-que-e-o-apache-iceberg">O que é o Apache Iceberg?<a class="headerlink" href="#o-que-e-o-apache-iceberg" title="Permanent link">&para;</a></h2>
+<p>Apache Iceberg é uma tabela de dados open source voltada para ambientes de big data. Ele permite que você trabalhe com grandes volumes de dados de forma escalável, segura e confiável, suportando operações como <code>UPDATE</code>, <code>DELETE</code> e <code>MERGE</code>, que normalmente não são suportadas nativamente em tabelas baseadas em arquivos como Parquet.</p>
+<hr />
+<h2 id="integracao-com-pyspark">Integração com PySpark<a class="headerlink" href="#integracao-com-pyspark" title="Permanent link">&para;</a></h2>
+<p>Abaixo está a explicação das configurações necessárias para integrar o PySpark ao Iceberg:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyspark.sql</span> <span class="kn">import</span> <span class="n">SparkSession</span>
+
+<span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
+    <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;Iceberg&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">master</span><span class="p">(</span><span class="s2">&quot;spark://spark-iceberg:7077&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.sql.catalog.iceberg&quot;</span><span class="p">,</span> <span class="s2">&quot;org.apache.iceberg.spark.SparkCatalog&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.sql.catalog.iceberg.type&quot;</span><span class="p">,</span> <span class="s2">&quot;hadoop&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.sql.catalog.iceberg.warehouse&quot;</span><span class="p">,</span> <span class="s2">&quot;s3a://warehouse/&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.sql.extensions&quot;</span><span class="p">,</span> <span class="s2">&quot;org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.hadoop.fs.s3a.access.key&quot;</span><span class="p">,</span> <span class="s2">&quot;admin&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.hadoop.fs.s3a.secret.key&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.hadoop.fs.s3a.endpoint&quot;</span><span class="p">,</span> <span class="s2">&quot;http://localhost:9001&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.hadoop.fs.s3a.path.style.access&quot;</span><span class="p">,</span> <span class="s2">&quot;true&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.hadoop.fs.s3a.impl&quot;</span><span class="p">,</span> <span class="s2">&quot;org.apache.hadoop.fs.s3a.S3AFileSystem&quot;</span><span class="p">)</span> \
+    <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="explicacao-das-configuracoes">Explicação das configurações<a class="headerlink" href="#explicacao-das-configuracoes" title="Permanent link">&para;</a></h2>
+<p><strong>appName:</strong> Nome do job Spark.</p>
+<p><strong>master:</strong> Define o endpoint do cluster Spark.</p>
+<p><strong>spark.sql.catalog.iceberg:</strong> Cria um catálogo chamado iceberg usando SparkCatalog.</p>
+<p><strong>type = hadoop:</strong> Define o tipo de catálogo (pode ser hadoop, hive, entre outros).</p>
+<p><strong>warehouse:</strong> Local onde os dados serão fisicamente armazenados. Neste caso, em um bucket S3.</p>
+<p><strong>extensions:</strong> Extensões do Iceberg que habilitam comandos SQL como UPDATE, DELETE, etc.</p>
+<hr />
+<h2 id="comandos-suportados">Comandos suportados<a class="headerlink" href="#comandos-suportados" title="Permanent link">&para;</a></h2>
+<p>Com a integração do Iceberg, podemos executar comandos avançados diretamente via Spark SQL, como:</p>
+<p><strong>INSERT INTO:</strong> Inserção de dados</p>
+<p><strong>UPDATE:</strong> Atualização de registros</p>
+<p><strong>DELETE:</strong> Remoção de registros com base em condições</p>
+<p><strong>MERGE INTO:</strong> Mesclagem de dados (estilo upsert)</p>
+<hr />
+<h2 id="exemplos">Exemplos<a class="headerlink" href="#exemplos" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>spark.sql(&quot;&quot;&quot;
+    UPDATE football.premier_league
+    SET homeScore = 3, awayScore = 1
+    WHERE `Home Team` = &#39;Fulham&#39;
+      AND `Away Team` = &#39;Liverpool&#39;
+      AND Date = &#39;2022-08-06&#39;
+&quot;&quot;&quot;)
+</code></pre></div>
+<hr />
+<h2 id="vantagens-do-apache-iceberg">Vantagens do Apache Iceberg<a class="headerlink" href="#vantagens-do-apache-iceberg" title="Permanent link">&para;</a></h2>
+<p><strong>Suporte a transações ACID</strong></p>
+<p><strong>Operações incrementais (leitura de alterações)</strong></p>
+<p><strong>Melhor gerenciamento de partições</strong></p>
+<p><strong>Compatível com vários motores: Spark, Flink, Trino, Hive</strong></p>
+<hr />
+<h2 id="quando-usar">Quando Usar?<a class="headerlink" href="#quando-usar" title="Permanent link">&para;</a></h2>
+<p>Iceberg é ideal para projetos que lidam com grandes volumes de dados e precisam de:</p>
+<p><strong>Governança de dados</strong></p>
+<p><strong>Suporte a atualizações e remoções</strong></p>
+<p><strong>Evolução de schema</strong></p>
+<p><strong>Alta performance em consultas analíticas</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -609,10 +873,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "content.code.copy", "navigation.top"], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
